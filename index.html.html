@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Printing Shop</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>My Printing Shop</h1>
+    <p>Fast • Affordable • Quality Prints</p>
+  </header>
+
+  <nav>
+    <a href="#services">Services</a>
+    <a href="#request">Print Request</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="services">
+    <h2>Our Services & Prices</h2>
+    <div class="service-grid">
+      <div class="service-card">
+        <h3>Paper Printing</h3>
+        <p>₱5 per page</p>
+      </div>
+      <div class="service-card">
+        <h3>Scanning</h3>
+        <p>₱10 per page</p>
+      </div>
+      <div class="service-card">
+        <h3>Photocopying</h3>
+        <p>₱3 per page</p>
+      </div>
+      <div class="service-card">
+        <h3>Tarpapel Printing</h3>
+        <p>₱250 per piece</p>
+      </div>
+      <div class="service-card">
+        <h3>Photopaper Printing</h3>
+        <p>₱20 per page</p>
+      </div>
+      <div class="service-card">
+        <h3>Sticker Paper Printing</h3>
+        <p>₱15 per page</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="request">
+    <h2>Submit Your Print Request</h2>
+    <form id="printRequestForm">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" required>
+
+      <label for="service">Choose Service</label>
+      <select id="service" required>
+        <option value="Paper Printing">Paper Printing</option>
+        <option value="Scanning">Scanning</option>
+        <option value="Photocopying">Photocopying</option>
+        <option value="Tarpapel Printing">Tarpapel Printing</option>
+        <option value="Photopaper Printing">Photopaper Printing</option>
+        <option value="Sticker Paper Printing">Sticker Paper Printing</option>
+      </select>
+
+      <label for="details">Additional Details</label>
+      <textarea id="details" placeholder="Pages, sizes, colors..." required></textarea>
+
+      <label for="file">Upload File (optional)</label>
+      <input type="file" id="file">
+
+      <button type="submit">Submit Request</button>
+    </form>
+    <p id="formMessage"></p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: myprintshop@email.com</p>
+    <p>Phone: 09XXXXXXXXX</p>
+    <p>Location: Your City</p>
+  </section>
+
+  <footer>
+    <p>© 2026 My Printing Shop</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
